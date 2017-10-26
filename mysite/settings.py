@@ -31,13 +31,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'core.apps.CoreConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'mutant',
+    'mutant.contrib.boolean',
+    'mutant.contrib.temporal',
+    'mutant.contrib.file',
+    'mutant.contrib.numeric',
+    'mutant.contrib.text',
+    'mutant.contrib.web',
+    'mutant.contrib.related',
+    'core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [
